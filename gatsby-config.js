@@ -7,10 +7,14 @@
 const siteMetadata = require('./config/metadata');
 
 module.exports = {
-  siteMetadata,
+  siteMetadata: {
+  siteUrl: `https://www.example.com`,
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -39,7 +43,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `http://www.esmseg.com`,
+        siteUrl: `https://www.google.com`,
       },
     },
     {
