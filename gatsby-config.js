@@ -43,11 +43,11 @@ module.exports = {
       },
     },
     {
-    resolve: `gatsby-plugin-styled-components`,
-    options: {
-      displayName: process.env.NODE_ENV !== 'production'
-    },
-  }   
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        displayName: process.env.NODE_ENV !== 'production'
+      },
+    },   
     `gatsby-plugin-offline`,
   ]
 }
